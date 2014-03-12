@@ -15,6 +15,7 @@
         crypto2,
         gproc,
         rlimit,
+        hackney_lib,
         hackney
       ]},
     {registered, []}, % This is SO wrong
