@@ -5,7 +5,10 @@
     {applications, [
         kernel,
         stdlib,
-        syntax_tools,compiler,goldrush,lager,
+        syntax_tools,compiler,
+        %goldrush,
+        idna,
+        lager,
         crypto, asn1, public_key, ssl,
         mimetypes,
         inets,
