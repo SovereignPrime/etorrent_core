@@ -32,7 +32,7 @@ init([]) ->
            [{"etorrent.azdht", udp, azdht_net:node_port()}
             || etorrent_config:azdht(), is_azdht_loaded()],
 
-    UPNPSpecs = [{maps, Maps}],
+    UPNPSpecs = [{ip, "0.0.0.0"}, {maps, Maps}],
     UPNPHandler = upnp:child_spec(etorrent_upnp, UPNPSpecs),
     % main upnp supervisor
     UPNPSup = {upnp_sup,
