@@ -291,7 +291,7 @@ code_change(_OldVsn, State, _Extra) ->
 send_message(TorrentID, Message, Rate, Socket) ->
     case etorrent_proto_wire:send_msg(Socket, Message) of
         {ok, Size} ->
-            ok = etorrent_torrent:statechange(TorrentID, [{add_upload, Size}]),
+            %ok = etorrent_torrent:statechange(TorrentID, [{add_upload, Size}]),
             {ok, etorrent_rate:update(Rate, Size), Size};
         {{error, closed}, _} ->
             {stop, normal};
