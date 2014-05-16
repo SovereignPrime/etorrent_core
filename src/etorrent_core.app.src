@@ -6,7 +6,7 @@
         kernel,
         stdlib,
         syntax_tools,compiler,
-        %goldrush,
+        goldrush,
         idna,
         lager,
         crypto, asn1, public_key, ssl,
